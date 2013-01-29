@@ -16,12 +16,12 @@
 (autoload 'js2-mode "js2" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
-(setq load-path (cons  "/opt/local/lib/erlang/lib/tools-2.6.7/emacs"
+(setq load-path (cons  "/opt/local/lib/erlang/lib/tools-2.6.8/emacs"
          load-path))
 (require 'erlang-start)
 
 ;disable backup
-(setq backup-inhibited t)
+(setq make-backup-files nil)
 ;disable auto save
 (setq auto-save-default nil)
 ; use visible bell instead of beep
