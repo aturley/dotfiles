@@ -26,3 +26,15 @@
 (setq auto-save-default nil)
 ; use visible bell instead of beep
 (setq visible-bell t)
+
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+  )
+
+(setq split-width-threshold nil)
+
+;; (setq clojure-enable-paredit 1)
+
+(autoload 'cobol-mode "cobol-mode" "A major mode for editing ANSI Cobol/Scobol files." t nil)

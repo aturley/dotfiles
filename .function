@@ -1,0 +1,30 @@
+# find files in the current directory
+function ff { find . -name "$1*" }
+
+# find first file
+function ff1 { find . -name "$1*" | head -n 1 }
+
+# get a line from stdin, specified by the argument
+function lnn { sed -n ${1}p }
+
+# reclone a mercurial repo
+function reclone {
+    grep default $1/.hg/hgrc | sed 's/^.*= *//' | xargs hg clone
+}
+
+# create a tinyurl
+function turl {
+    curl -d "url=$1" http://tinyurl.com/api-create.php
+}
+
+function bexport {
+}
+
+function ladclone {
+    hg clone ssh://mercurial.laddersoffice.com//repos/$1
+}
+
+# list ladders repos
+function ladhgls {
+    ssh mercurial.laddersoffice.com ls /repos
+}

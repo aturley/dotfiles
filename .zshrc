@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="aturley"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -48,3 +48,11 @@ SHARE_HISTORY=1
 
 # Customize to your needs...
 export PATH=~/bin:/usr/local/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/bin/:/opt/local/bin:/usr/local/groovy/bin:/opt/local/bin:/usr/local/groovy/bin
+
+source ~/.function
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+export CVS_USER=aturley
+
+export JAVA_HOME=$(/usr/libexec/java_home)
